@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "作业调度算法", "作�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "页面置换算法", "页面置换算法\页面置换算法.vcxproj", "{30D96BED-4416-4099-A02A-7DDFE412E643}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "磁盘调度算法", "磁盘调度算法\磁盘调度算法.vcxproj", "{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{30D96BED-4416-4099-A02A-7DDFE412E643}.Release|x64.Build.0 = Release|x64
 		{30D96BED-4416-4099-A02A-7DDFE412E643}.Release|x86.ActiveCfg = Release|Win32
 		{30D96BED-4416-4099-A02A-7DDFE412E643}.Release|x86.Build.0 = Release|Win32
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Debug|x64.ActiveCfg = Debug|x64
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Debug|x64.Build.0 = Debug|x64
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Debug|x86.Build.0 = Debug|Win32
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Release|x64.ActiveCfg = Release|x64
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Release|x64.Build.0 = Release|x64
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Release|x86.ActiveCfg = Release|Win32
+		{A7F56AFA-25FD-4635-BB5B-FAAE266DB826}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

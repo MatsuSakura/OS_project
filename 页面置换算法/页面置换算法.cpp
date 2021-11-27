@@ -46,7 +46,8 @@ void FIFO(int pc[], int bc[], int pageCount, int blockCount)
 				}
 				else
 				{
-					… //页面不在内存，淘汰最先进入的页面
+					bc[p % blockCount] = pc[i];//页面不在内存，淘汰最先进入的页面
+					p++;
 				}
 
 				noPage++;
@@ -162,7 +163,7 @@ void LRU(int pc[], int bc[], int pageCount, int blockCount)
 }
 void Optiomal(int pc[], int bc[], int pageCount, int blockCount)
 {
-	cout << "2：最佳置换算法" << endl;
+	cout << "2：最佳置换算法(OPT)" << endl;
 	if (pageCount <= blockCount)
 	{
 		cout << "缺页次数为" << 0 << endl;
@@ -288,7 +289,7 @@ int main()
 	cin >> blockCount;
 	cout << "0：FIFO 置换算法" << endl;
 	cout << "1：LRU 置换算法" << endl;
-	cout << "2：最佳置换算法" << endl;
+	cout << "2：最佳置换 OPT 算法" << endl;
 	cout << "3：Clock 置换算法" << endl;
 	cout << "按数字选择算法类别：" << endl;
 	int n;
