@@ -19,10 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="银行家算法.cpp" />
+    <Text Include="input.txt" />
+    <Text Include="input1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
+    <ClCompile Include="时间片(原版).cpp" />
+    <ClCompile Include="时间片改.cpp" />
+    <ClCompile Include="银行家算法.cpp" />
+    <ClCompile Include="高响应比+短作业优先算法.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

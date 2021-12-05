@@ -4,7 +4,7 @@
 #include<fstream>
 #include<io.h>
 #include<string.h>
-#include <stdio.h>
+#include <iostream>
 using namespace std;
 #define READER 'R'   //读者
 #define WRITER 'W'   //写者
@@ -44,7 +44,7 @@ void RP_ReaderThread(void* p) {
 	readcount++;
 	if (readcount == 1) {
 		//第一个读者，等待资源
-		EnterCriticalSection(&RP_Write);
+		EnterCriticalSection(&RP_Write);//用来确保同一时刻只有一个线程操作被保护的数据的操作函数
 	}
 	ReleaseMutex(h_Mutex);
 	//读文件

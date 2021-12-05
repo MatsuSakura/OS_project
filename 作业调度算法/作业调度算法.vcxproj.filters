@@ -15,11 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="input.txt" />
+    <Text Include="input1.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="时间片改.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="时间片(原版).cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="高响应比+短作业优先算法.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
     <ClCompile Include="银行家算法.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt" />
   </ItemGroup>
 </Project>

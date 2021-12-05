@@ -162,7 +162,7 @@ void Elevator(int array[], int m) //先</A>要给出当前磁道号和移动臂的移动方向
 				{
 					cout << array[j] << " ";
 				}
-				sum = now - 2 * array[0] + array[m - 1];
+				sum = -array[0] + array[m - 1]+now-array[0];
 			}
 			else
 			{
@@ -175,7 +175,7 @@ void Elevator(int array[], int m) //先</A>要给出当前磁道号和移动臂的移动方向
 					cout << array[j] << " ";
 				}
 
-				sum = -now - array[0] + 2 * array[m - 1];
+				sum =array[m - 1]-array[0]+array[m-1]-now;
 			}
 		}
 	double result = sum;
@@ -211,6 +211,7 @@ void CElevator(int array[], int m) {
 		}
 		l = k - 1;
 		r = k;
+		//cout << l << endl << k << endl;
 		cout << "请输入当前移动臂的移动方向（1表示向内，0表示向外）:";
 		cin >> d;
 		if (d == 0) {
@@ -220,7 +221,7 @@ void CElevator(int array[], int m) {
 			for (j = m - 1; j >= k; j--) {
 				cout << array[j] << " ";
 			}
-			sum = now - 2 * array[0] + array[m - 1];
+			sum = 2*(array[m-1]-array[0])-(array[r]-now);
 		}
 		else {
 			for (j = r; j < m; j++) {
@@ -229,7 +230,8 @@ void CElevator(int array[], int m) {
 			for (j = 0; j < k; j++) {
 				cout << array[j] << " ";
 			}
-			sum = -now - array[0] + 2 * array[m - 1];
+			cout << array[l]<<endl;
+			sum = 2 * (array[m - 1] - array[0]) - (now - array[l]);
 		}
 	}
 	double result = sum;

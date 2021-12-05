@@ -166,7 +166,7 @@ void run(struct pro* head)
 		}
 	}
 }
-int main()
+int main2()
 {
 	struct pro* head = creatList();
 	printf("当前时间片大小为:%d\n", RR);

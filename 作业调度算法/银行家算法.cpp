@@ -26,7 +26,7 @@ struct Available //可利用的资源量
 	int av_b;
 	int av_c;
 } q;
-struct pr //定义一个结构1
+struct pr //定义一个结构
 {
 	char name;
 	Max max;
